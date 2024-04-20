@@ -9,5 +9,5 @@ services:
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=Escola
-      - PGPORT=5400
+      - POSTGRES_DB=Estudantes
+      # - PGPORT=5432
