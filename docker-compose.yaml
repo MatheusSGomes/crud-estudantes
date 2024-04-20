@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  postgres:
+    image: postgres:16.2-alpine3.19
+    container_name: db-api-estudante-dotnet
+    ports:
+      - 5400:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=Escola
+      - PGPORT=5400

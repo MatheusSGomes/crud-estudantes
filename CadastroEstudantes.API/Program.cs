@@ -12,12 +12,20 @@
 // using Microsoft.Extensions.Configuration;
 
 using System.Reflection;
+using CadastroEstudantes.API.Data;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddControllers();
+
+builder.Services.AddDbContext<EstudanteContext>(opt => {
+opt.UseNpgsql(builder.Configuration.GetConnectionString("App"));
+});
+
 // Adiciona serviços para controllers com views.
-builder.Services.AddControllersWithViews();
+// builder.Services.AddControllersWithViews();
 
 // Adiciona o serviço CORS com uma política personalizada.
 builder.Services.AddCors(options =>
