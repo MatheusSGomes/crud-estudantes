@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "lN242w8fSv9m9KvfeGduGfVgmv0m9G8R8gjQgt0mwgrhCyX/npbS42mflMuSXPCDlgtRe8NQvosNn8LCHFkCyg==",
+  "success": true,
+  "projectFilePath": "/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.API/CadastroEstudantes.API.csproj",
+  "expectedPackageFiles": [
+    "/home/matheus/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/home/matheus/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/matheus/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "/home/matheus/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "/home/matheus/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "/home/matheus/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
