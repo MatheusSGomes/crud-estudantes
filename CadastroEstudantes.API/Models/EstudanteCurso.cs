@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace CadastroEstudantes.API.Models;
+
 public class EstudanteCurso
 {
     public int EstudanteId { get; set; }

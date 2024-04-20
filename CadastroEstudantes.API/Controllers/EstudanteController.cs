@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Estudante.API.Controllers;
+namespace CadastroEstudantes.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
