@@ -20,8 +20,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddDbContext<EstudanteContext>(opt => {
-opt.UseNpgsql(builder.Configuration.GetConnectionString("App"));
+builder.Services.AddDbContext<EscolaContext>(opt => {
+    // opt.UseNpgsql(builder.Configuration.GetConnectionString("App"));
+    opt.UseInMemoryDatabase("Escola");
 });
 
 // Adiciona serviços para controllers com views.
