@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CadastroEstudantes.API</name>
+    </assembly>
+    <members>
+        <member name="M:Estudante.API.Controllers.EstudanteController.Get">
+            <summary>
+            Rota que lista todos os estudantes
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

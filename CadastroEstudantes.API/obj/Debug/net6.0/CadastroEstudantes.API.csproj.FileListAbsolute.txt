@@ -25,3 +25,14 @@
 /home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.API/obj/Debug/net6.0/ref/CadastroEstudantes.API.dll
 /home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.API/obj/Debug/net6.0/CadastroEstudantes.API.pdb
 /home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.API/obj/Debug/net6.0/CadastroEstudantes.API.genruntimeconfig.cache
+/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.API/bin/Debug/net6.0/Humanizer.dll
+/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
+/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.API/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.API/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.API/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
+/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.API/bin/Debug/net6.0/Npgsql.dll
+/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.API/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.API/bin/Debug/net6.0/CadastroEstudantes.API.xml
+/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.API/obj/Debug/net6.0/CadastroEstudantes.API.xml
