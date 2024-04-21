@@ -44,12 +44,13 @@ public class EstudantesController : ControllerBase
     }
 
     [HttpPost]
-    public string PostEstudante(Estudante estudante)
+    public async Task<ActionResult<Estudante>> PostEstudante(Estudante estudante)
     {
-        Console.Write(estudante);
+        _context.Estudantes.Add(estudante);
 
-        Console.WriteLine(estudante);
-        return "Adiciona um Estudante:" + estudante.Ativo;
+        await _context.SaveChangesAsync();
+
+        return CreatedAtAction("GetEstudante", new { id = estudante.Id }, estudante);
     }
 
     [HttpPut("{id}")]
