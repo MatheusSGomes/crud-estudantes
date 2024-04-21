@@ -12,15 +12,15 @@ namespace CadastroEstudantes.API.Controllers;
 [ApiController]
 public class EstudantesController : ControllerBase
 {
-    private readonly EscolaContext _context;
+    private readonly EstudanteContext _context;
 
-    public EstudantesController(EscolaContext context)
+    public EstudantesController(EstudanteContext context)
     {
         _context = context;
     }
 
     /// <summary>
-    /// Rota que lista todos os estudantes
+    /// Lista todos os estudantes
     /// </summary>
     /// <returns></returns>
     // GET: api/Estudantes

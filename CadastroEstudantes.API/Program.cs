@@ -1,16 +1,3 @@
-// var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-
-// builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-// builder.Services.AddEndpointsApiExplorer();
-
-// using Microsoft.OpenApi.Models;
-
-// using EscolaApi.Dados;
-// using Microsoft.Extensions.Configuration;
-
 using System.Reflection;
 using CadastroEstudantes.API.Data;
 using Microsoft.EntityFrameworkCore;
@@ -20,13 +7,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddDbContext<EscolaContext>(opt => {
+builder.Services.AddDbContext<EstudanteContext>(opt => {
     opt.UseNpgsql(builder.Configuration.GetConnectionString("App"));
-    // opt.UseInMemoryDatabase("Escola");
+    // opt.UseInMemoryDatabase("Estudante");
 });
-
-// Adiciona serviços para controllers com views.
-// builder.Services.AddControllersWithViews();
 
 // Adiciona o serviço CORS com uma política personalizada.
 builder.Services.AddCors(options =>
