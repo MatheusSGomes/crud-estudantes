@@ -14,5 +14,5 @@ public class Estudante
     public string Email { get; set; }
     public bool Ativo { get; set; }
 
-    public List<EstudanteCurso> EstudantesCursos { get; set; }
+    // public List<EstudanteCurso> EstudantesCursos { get; set; }
 }

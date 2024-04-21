@@ -4,6 +4,7 @@ using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using CadastroEstudantes.API.Data;
 using CadastroEstudantes.API.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CadastroEstudantes.API.Controllers;
 
@@ -24,9 +25,9 @@ public class EstudantesController : ControllerBase
     /// <returns></returns>
     // GET: api/Estudantes
     [HttpGet]
-    public IEnumerable<Estudante> GetEstudantes()
+    public async Task<ActionResult<IEnumerable<Estudante>>> GetEstudantes()
     {
-        return _context.Estudantes;
+        return await _context.Estudantes.ToListAsync();
     }
 
     [HttpGet("{id}")]
@@ -37,16 +38,19 @@ public class EstudantesController : ControllerBase
         return estudante;
     }
 
+    [HttpPost]
+    public string PostEstudante(Estudante estudante)
+    {
+        Console.Write(estudante);
+
+        Console.WriteLine(estudante);
+        return "Adiciona um Estudante:" + estudante.Ativo;
+    }
+
     [HttpPut("{id}")]
     public string PutEstudante(int id, Estudante estudante)
     {
         return "Atualiza um Estudante";
-    }
-
-    [HttpPost]
-    public string PostEstudante(Estudante estudante)
-    {
-        return "Adiciona um Estudante";
     }
 
     [HttpDelete]
