@@ -1,3 +1,5 @@
+using System;
+using System.Data;
 using Microsoft.EntityFrameworkCore;
 using CadastroEstudantes.API.Models;
 
@@ -16,5 +18,5 @@ public class EscolaContext : DbContext
     public DbSet<Estudante> Estudantes { get; set; }
     public DbSet<Professor> Professores { get; set; }
     public DbSet<Curso> Cursos { get; set; }
-    public DbSet<EstudanteCurso> EstudantesCursos { get; set; }
+    // public DbSet<EstudanteCurso> EstudantesCursos { get; set; }
 }

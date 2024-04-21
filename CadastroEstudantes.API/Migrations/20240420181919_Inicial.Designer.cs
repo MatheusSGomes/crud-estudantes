@@ -10,7 +10,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace CadastroEstudantes.API.Migrations
 {
-    [DbContext(typeof(EstudanteContext))]
+    [DbContext(typeof(EscolaContext))]
     [Migration("20240420181919_Inicial")]
     partial class Inicial
     {

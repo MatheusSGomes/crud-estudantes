@@ -9,8 +9,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace CadastroEstudantes.API.Migrations
 {
-    [DbContext(typeof(EstudanteContext))]
-    partial class EstudanteContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(EscolaContext))]
+    partial class EscolaContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
