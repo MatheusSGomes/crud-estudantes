@@ -4,14 +4,14 @@
     "/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.Tests/CadastroEstudantes.Tests.csproj": {}
   },
   "projects": {
-    "/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.Tests/CadastroEstudantes.Tests.csproj": {
+    "/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.API/CadastroEstudantes.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.Tests/CadastroEstudantes.Tests.csproj",
-        "projectName": "CadastroEstudantes.Tests",
-        "projectPath": "/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.Tests/CadastroEstudantes.Tests.csproj",
+        "projectUniqueName": "/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.API/CadastroEstudantes.API.csproj",
+        "projectName": "CadastroEstudantes.API",
+        "projectPath": "/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.API/CadastroEstudantes.API.csproj",
         "packagesPath": "/home/matheus/.nuget/packages/",
-        "outputPath": "/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.Tests/obj/",
+        "outputPath": "/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/matheus/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,111 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.128/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.Tests/CadastroEstudantes.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.Tests/CadastroEstudantes.Tests.csproj",
+        "projectName": "CadastroEstudantes.Tests",
+        "projectPath": "/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.Tests/CadastroEstudantes.Tests.csproj",
+        "packagesPath": "/home/matheus/.nuget/packages/",
+        "outputPath": "/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/matheus/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.API/CadastroEstudantes.API.csproj": {
+                "projectPath": "/home/matheus/ESTUDOS/PROGRAMACAO/DOTNET/CadastroEstudantes/CadastroEstudantes.API/CadastroEstudantes.API.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.11.0, )"
