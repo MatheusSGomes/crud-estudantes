@@ -30,10 +30,11 @@ public class EstudantesController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    public string GetEstudante(int id)
+    public Estudante GetEstudante(int id)
     {
-
-        return "Retorna um Estudante";
+        var estudante = _context.Estudantes.Find(id);
+        if (estudante == null) throw new KeyNotFoundException("Estudante não encontrado");
+        return estudante;
     }
 
     [HttpPut("{id}")]
