@@ -16,4 +16,11 @@ public class MultiplicaTest
         var result = Mutiplica(2, 2);
         Assert.Equal(4, result);
     }
+
+    [Fact]
+    public void MultiplicacaoIncorreta()
+    {
+        var result = Mutiplica(5, 5);
+        Assert.NotEqual(20, result);
+    }
 }

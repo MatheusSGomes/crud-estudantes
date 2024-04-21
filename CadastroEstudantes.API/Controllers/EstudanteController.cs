@@ -18,21 +18,21 @@ public class EstudantesController : ControllerBase
         _context = context;
     }
 
-
     /// <summary>
     /// Rota que lista todos os estudantes
     /// </summary>
     /// <returns></returns>
     // GET: api/Estudantes
     [HttpGet]
-    public string GetEstudantes()
+    public IEnumerable<Estudante> GetEstudantes()
     {
-        return "Retorna todos os Estudantes";
+        return _context.Estudantes;
     }
 
     [HttpGet("{id}")]
     public string GetEstudante(int id)
     {
+
         return "Retorna um Estudante";
     }
 
