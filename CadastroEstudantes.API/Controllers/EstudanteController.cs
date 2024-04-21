@@ -54,9 +54,17 @@ public class EstudantesController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public string PutEstudante(int id, Estudante estudante)
+    public async Task<IActionResult> PutEstudante(int id, Estudante estudante)
     {
-        return "Atualiza um Estudante";
+        if (id != estudante.Id) {
+            return BadRequest();
+        }
+
+        _context.Entry(estudante).State = EntityState.Modified;
+
+        await _context.SaveChangesAsync();
+
+        return NoContent();
     }
 
     [HttpDelete]
