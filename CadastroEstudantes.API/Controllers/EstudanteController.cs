@@ -68,13 +68,17 @@ public class EstudantesController : ControllerBase
     }
 
     [HttpDelete]
-    public string DeleteEstudante(int id)
+    public async Task<IActionResult> DeleteEstudante(int id)
     {
-        return "Apaga um Estudante";
-    }
+        var estudante = await _context.Estudantes.FindAsync(id);
 
-    private string EstudanteExists(int id) // bool
-    {
-        return "valida existencia estudante";
+        if (estudante == null) {
+            return NotFound();
+        }
+
+        _context.Estudantes.Remove(estudante);
+        await _context.SaveChangesAsync();
+
+        return NoContent();
     }
 }
