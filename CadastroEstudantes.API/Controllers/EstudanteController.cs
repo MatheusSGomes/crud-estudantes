@@ -31,10 +31,15 @@ public class EstudantesController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    public Estudante GetEstudante(int id)
+    public async Task<ActionResult<Estudante>> GetEstudante(int id)
     {
-        var estudante = _context.Estudantes.Find(id);
-        if (estudante == null) throw new KeyNotFoundException("Estudante não encontrado");
+        var estudante = await _context.Estudantes.FindAsync(id);
+
+        if (estudante == null) {
+            // throw new KeyNotFoundException("Estudante não encontrado");
+            return NotFound();
+        }
+
         return estudante;
     }
 
